@@ -6,7 +6,7 @@ import pngquant from 'imagemin-pngquant';
 
 export default function(gulp, plugins, args, config, taskTarget, browserSync) {
   let dirs = config.directories;
-  let dest = path.join(taskTarget, dirs.images.replace(/^_/, ''));
+  let dest = path.join(taskTarget, dirs.images.replace(/^_/, 'assets/'));
 
   // Imagemin
   gulp.task('imagemin', () => {

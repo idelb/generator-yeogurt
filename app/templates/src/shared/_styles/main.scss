@@ -1,18 +1,15 @@
-// Normalize Styles
-@import 'node_modules/normalize.css/normalize';
+
+// variables
+@import 'materia-<%= projectName %>/variables';
+
+// bootstrap
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+// estructure
+@import 'materia-<%= projectName %>/bootswatch';
 
 // Import Modules
 @import '../_modules/link/link';
-
-// Box sizing partial styles:
-// Apply a natural box layout model to all elements
-*,
-*:before,
-*:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
 .yeogurt-info {
   text-align: center;

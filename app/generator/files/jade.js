@@ -1,15 +1,15 @@
 /**
- * Generate files specific to the jade folder
+ * Generate files specific to the pug folder
  */
 
 'use strict';
 
-var jadeFiles = function jadeFiles() {
-  if (this.htmlOption === 'jade') {
-    this.template('src/static/jade/_layouts/base.jade', 'src/_layouts/base.jade');
-    this.template('src/static/jade/_modules/link/link.jade', 'src/_modules/link/link.jade');
-    this.template('src/static/jade/index.jade', 'src/index.jade');
+var pugFiles = function pugFiles() {
+  if (this.htmlOption === 'pug') {
+    this.template('src/static/pug/_layouts/base.pug', 'src/_layouts/base.pug');
+    this.template('src/static/pug/_modules/link/link.pug', 'src/_modules/link/link.pug');
+    this.template('src/static/pug/index.pug', 'src/index.pug');
   }
 };
 
-module.exports = jadeFiles;
+module.exports = pugFiles;

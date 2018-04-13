@@ -31,9 +31,9 @@
     "vinyl-buffer": "~1.0.0",
     "gulp-util": "~3.0.8",
     "gulp": "~3.9.1",
-    "browser-sync": "~2.18.0",<% if (htmlOption === 'jade') { %>
-    "gulp-jade": "~1.1.0",
-    "jade": "~1.11.0",<% } %><% if (htmlOption === 'nunjucks') { %>
+    "browser-sync": "~2.18.0",<% if (htmlOption === 'pug') { %>
+    "gulp-pug": "~3.3.0",
+    "pug": "~2.0.3",<% } %><% if (htmlOption === 'nunjucks') { %>
     "nunjucks": "~3.0.0",
     "gulp-nunjucks-html": "~2.0.0",<% } %>
     "gulp-postcss": "~6.3.0",
