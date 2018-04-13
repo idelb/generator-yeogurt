@@ -16,6 +16,10 @@ var styleFiles = function styleFiles() {
     }
     else {
       this.template('src/shared/_styles/main.scss', 'src/_styles/main.scss');
+      this.template('src/shared/_styles/main-development.scss', 'src/_styles/main-development.scss');
+      this.template('src/shared/_styles/references/_variables.scss', 'src/_styles/references/_variables.scss');
+      this.template('src/shared/_styles/united-bootswatch/_variables.scss', 'src/_styles/united-' + this.projectName + '/_variables.scss');
+      this.template('src/shared/_styles/united-bootswatch/_bootswatch.scss', 'src/_styles/united-' + this.projectName + '/_bootswatch.scss');
       this.template('src/shared/_styles/link/link.scss', 'src/_modules/link/link.scss');
     }
   }

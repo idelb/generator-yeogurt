@@ -1,7 +1,6 @@
 'use strict';
 
 import fs from 'fs';
-import pjson from '../package.json';
 
 export default function (gulp, plugins, args, config, taskTarget, browserSync) {
   let bootswatchPath = 'node_modules/bootswatch/dist/';
@@ -25,7 +24,7 @@ export default function (gulp, plugins, args, config, taskTarget, browserSync) {
           break;
         }
       }
-      let dest = 'src/_styles/' + b + '-' + pjson.name + '/';
+      let dest = 'src/_styles/' + b + '-<%= projectName %>/';
       gulp.src(files, {
         cwd: bootswatchPath + b + '/'
       })

@@ -4,7 +4,10 @@
 
 'use strict';
 
+var mkdirp = require('mkdirp');
+
 var docFiles = function docFiles() {
+  mkdirp.sync('src/assets/fonts');
   this.template('src/shared/_data/README.md', 'src/_data/README.md');
   this.template('src/shared/_modules/README.md', 'src/_modules/README.md');
   this.template('src/shared/_layouts/README.md', 'src/_layouts/README.md');

@@ -1,7 +1,7 @@
 # <%= _.titleize(projectName) %> readme
 
 Generated on <%= (new Date).toISOString().split('T')[0] %> using
-[<%= pkg.name %>@<%= pkg.version %>](https://github.com/larsonjj/generator-yeogurt)
+[<%= pkg.name %>@<%= pkg.version %>](https://github.com/joneldiablo/generator-yeogurt)
 
 ## Description
 
@@ -25,7 +25,7 @@ Styles<% if (cssOption === 'sass') { %>
 - [Stylus](https://learnboost.github.io/stylus/)<% } %>
 
 Markup<% if (htmlOption === 'pug') { %>
-- [Pug](http://pug-lang.com/)<% } else if (htmlOption === 'nunjucks') { %>
+- [Pug](https://pugjs.org/api/getting-started.html)<% } else if (htmlOption === 'nunjucks') { %>
 - [Nunjucks](https://mozilla.github.io/nunjucks/)<% } %>
 
 Optimization

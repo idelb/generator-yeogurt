@@ -48,7 +48,7 @@ block append scripts
 > NOTE: The `append stylesheets` and `append scripts` blocks allow you to add on any layout-specific scripts or stylesheets.
 > The `content` block is overriding the parent `base.pug` file's block by the same name since we are extending from it.
 > The `first` and `second` blocks can contain default markup, but also allow you to extend from this layout and overwrite them.
-> You can read more about extensions and blocks on the [Pug website](http://pug-lang.com/reference/)
+> You can read more about extensions and blocks on the [Pug website](https://pugjs.org/api/getting-started.html)
 
 ## Sub-generator
 

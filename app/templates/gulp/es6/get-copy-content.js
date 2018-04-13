@@ -8,7 +8,7 @@ export default function (gulp, plugins, args, config, taskTarget, browserSync) {
     gulp.task('get-copy-text', () => {
         let username = "principal",
             password = "principal",
-            url = 'http://principal-login.multiplicamx.com/backend/google-ss.php',
+            url = 'http://localhost/google-ss.php',
             auth = "Basic " + new Buffer(username + ":" + password).toString("base64");
 
         request(url, {

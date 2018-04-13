@@ -4,7 +4,7 @@
 
 # Yeogurt Generator [![Build Status](https://secure.travis-ci.org/larsonjj/generator-yeogurt.png?branch=master)](https://travis-ci.org/larsonjj/generator-yeogurt) [![NPM version](https://badge.fury.io/js/generator-yeogurt.png)](http://badge.fury.io/js/generator-yeogurt) [![Coverage Status](https://coveralls.io/repos/larsonjj/generator-yeogurt/badge.png)](https://coveralls.io/r/larsonjj/generator-yeogurt)
 
-A generator for creating static sites. Helps you harness the power of your favorite tools: [Pug](http://pug-lang.com/) or [Nunjucks](https://mozilla.github.io/nunjucks/), [Gulp](http://gulpjs.com), ES6/2015, and much more!
+A generator for creating static sites. Helps you harness the power of your favorite tools: [Pug](https://pugjs.org/api/getting-started.html) or [Nunjucks](https://mozilla.github.io/nunjucks/), [Gulp](http://gulpjs.com), ES6/2015, and much more!
 
 # Table of Contents
 
@@ -38,7 +38,7 @@ A generator for creating static sites. Helps you harness the power of your favor
 - [Less](http://lesscss.org/), [Sass](http://sass-lang.com/) (via [node-sass](https://github.com/andrew/node-sass)), or [Stylus](http://learnboost.github.io/stylus/) for Stylesheets
 - [Jasmine](http://jasmine.github.io/) or [Mocha](http://mochajs.org/) + [Chai](http://chaijs.com/) for JavaScript unit testing
 - [Karma](http://karma-runner.github.io/0.12/index.html) for running unit tests
-- [Pug](http://pug-lang.com/) or [Nunjucks](https://mozilla.github.io/nunjucks/) for templating
+- [Pug](https://pugjs.org/api/getting-started.html) or [Nunjucks](https://mozilla.github.io/nunjucks/) for templating
 
 
 ## Getting Started

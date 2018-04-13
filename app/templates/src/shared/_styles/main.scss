@@ -1,12 +1,12 @@
 
 // variables
-@import 'materia-<%= projectName %>/variables';
+@import 'united-<%= projectName %>/variables';
 
 // bootstrap
 @import 'node_modules/bootstrap/scss/bootstrap';
 
 // estructure
-@import 'materia-<%= projectName %>/bootswatch';
+@import 'united-<%= projectName %>/bootswatch';
 
 // Import Modules
 @import '../_modules/link/link';

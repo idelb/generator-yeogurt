@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "dependencies": {
     "jquery": "~3.1.1",
-    "normalize.css": "~5.0.0"
+    "bootstrap": "^4.0.0"
   },
   "devDependencies": {<% if (jsPreprocessor === 'es6') { %>
     "babelify": "~7.3.0",
@@ -12,6 +12,7 @@
     "babel-plugin-add-module-exports": "~0.2.1",
     "babel-eslint": "~7.1.1",<% } %>
     "lodash": "~4.17.4",
+    "bootswatch": "^4.0.0",
     "foldero": "~0.1.1",
     "minimist": "~1.2.0",
     "rimraf": "~2.6.1",
@@ -74,6 +75,7 @@
   "//": "CUSTOM CONFIGURATION",
   "config": {
     "//": "Local Server Settings",
+    "environment": "DEVELOPMENT",
     "host": "127.0.0.1",
     "port": "3000",
     "baseUrl": "./",

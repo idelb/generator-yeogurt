@@ -4,6 +4,7 @@
 'use strict';
 
 import $ from 'jquery';
+import 'bootstrap';
 import Link from '../_modules/link/link';
 
 $(() => {

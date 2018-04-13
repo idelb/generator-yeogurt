@@ -39,6 +39,8 @@ var gulpFiles = function gulpFiles() {
     this.template('gulp/es6/eslint.js', 'gulp/eslint.js');
     this.template('gulp/es6/imagemin.js', 'gulp/imagemin.js');
     this.template('gulp/es6/watch.js', 'gulp/watch.js');
+    this.template('gulp/es6/bootswatch.js', 'gulp/bootswatch.js');
+    this.template('gulp/es6/get-copy-content.js', 'gulp/get-copy-content.js');
 
     if (this.htmlOption === 'pug') {
       this.template('gulp/es6/pug.js', 'gulp/pug.js');
