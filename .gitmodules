@@ -1,0 +1,3 @@
+[submodule "frontend-seed"]
+	path = frontend-seed
+	url = https://bitbucket.org/jonathan_multiplica/frontend-seed
