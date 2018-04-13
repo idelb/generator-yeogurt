@@ -1,6 +1,6 @@
 {
   "name": "generator-yeogurt",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "A generator for creating static sites. Helps you harness the power of your favorite tools: Pug or Nunjucks, Gulp, ES6/2015, and much more!",
   "keywords": [
     "yeoman-generator",
@@ -16,17 +16,17 @@
     "less",
     "browserify"
   ],
-  "homepage": "https://github.com/larsonjj/generator-yeogurt",
-  "bugs": "https://github.com/larsonjj/generator-yeogurt/issues",
+  "homepage": "https://github.com/jonediablo/generator-yeogurt",
+  "bugs": "https://github.com/joneldiablo/generator-yeogurt/issues",
   "author": {
     "name": "Jake Larson",
     "email": "jake.j.larson@gmail.com",
-    "url": "https://github.com/larsonjj"
+    "url": "https://github.com/joneldiablo"
   },
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/larsonjj/generator-yeogurt.git"
+    "url": "git://github.com/joneldiablo/generator-yeogurt.git"
   },
   "scripts": {
     "clean": "rimraf node_modules coverage test/app/temp test/subgenerators/temp",
