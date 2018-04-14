@@ -1,8 +1,9 @@
 extends ../<%= layoutDir %>/<%= layout %>
 
-block config
+block append config
   //- Correct base url pathing for this page
-  - var baseUrl = '../'
+  - baseUrl = '../'
+  - page = '<%= name %>'
 
-block content
+block common
   p <%= name.toLowerCase() %> page
