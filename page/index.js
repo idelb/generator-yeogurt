@@ -29,7 +29,7 @@ util.inherits(PageGenerator, yeoman.generators.NamedBase);
 // Prompts
 PageGenerator.prototype.ask = function ask() {
 
-  this.layout = 'base';
+  this.layout = 'common';
   if (this.options.layout) {
     this.layout = this.options.layout;
   }
