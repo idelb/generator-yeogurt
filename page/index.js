@@ -45,7 +45,7 @@ PageGenerator.prototype.ask = function ask() {
 };
 
 PageGenerator.prototype.files = function files() {
-  if (this.htmlOption === 'pug') {
+  if (this.htmlOption === 'pug' || this.htmlOption === 'jade') {
     this.template('page.pug', this.pageFile + '.pug');
   }
   else if (this.htmlOption === 'nunjucks') {

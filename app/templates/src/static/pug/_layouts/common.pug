@@ -39,6 +39,10 @@ block append stylesheets
   if config.environment == "DEVELOPMENT"
     link(href=baseUrl + "assets/styles/main-development.css")
 
+block append lib-scripts
+  script.
+    var baseUrl = '#{baseUrl}';
+
 block append scripts
   if config.environment == "DEVELOPMENT"
     script(src=baseUrl + "assets/scripts/main-development.js")

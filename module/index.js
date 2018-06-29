@@ -103,7 +103,7 @@ ModuleGenerator.prototype.files = function files() {
     return;
   }
 
-  var htmlSuffix = (this.htmlOption === 'pug') ? '.pug' : '.nunjucks';
+  var htmlSuffix = (this.htmlOption === 'pug' || this.htmlOption === 'pug') ? '.pug' : '.nunjucks';
   var jsSuffix = (this.jsPreprocessor === 'none') ? '.js' : '.es6.js';
   var cssSuffix = _getCssSuffix(this.cssOption, this.sassSyntax);
 

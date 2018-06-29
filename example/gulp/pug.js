@@ -49,7 +49,7 @@ export default function(gulp, plugins, args, config, taskTarget, browserSync) {
     }
 
     return gulp.src([
-      path.join(dirs.source, '**/*.pug'),
+      path.join(dirs.source, '**/*.{pug,jade}'),
       '!' + path.join(dirs.source, '{**/\_*,**/\_*/**}')
     ])
     .pipe(plugins.changed(dest))

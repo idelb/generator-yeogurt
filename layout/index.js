@@ -42,7 +42,7 @@ ModuleGenerator.prototype.ask = function ask() {
 };
 
 ModuleGenerator.prototype.files = function files() {
-  if (this.htmlOption === 'pug') {
+  if (this.htmlOption === 'pug' || this.htmlOption === 'jade') {
     this.template('layout.pug', this.layoutFile + '.pug');
   }
   else if (this.htmlOption === 'nunjucks') {
