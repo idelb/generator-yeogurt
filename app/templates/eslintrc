@@ -18,7 +18,22 @@
     "afterEach": true<% } %>
   },
   "rules": {
-    "indent": [2, 2],
+    "indent": ["error", 2,
+      {
+        "SwitchCase": 1,
+        "MemberExpression": 1,
+        "VariableDeclarator": 1,
+        "outerIIFEBody": 1,
+        "FunctionDeclaration": {
+          "parameters": 1,
+          "body": 1
+        },
+        "FunctionExpression": {
+          "parameters": 1,
+          "body": 1
+        }
+      }
+    ],
     "valid-jsdoc": 0,
     "brace-style": [1, "stroustrup"],
     "no-constant-condition": 1,

@@ -1,7 +1,5 @@
 'use strict';
 
-import fs from 'fs';
-
 export default function (gulp, plugins, args, config, taskTarget, browserSync) {
   let bootswatchPath = 'node_modules/bootswatch/dist/';
 

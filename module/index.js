@@ -103,7 +103,7 @@ ModuleGenerator.prototype.files = function files() {
     return;
   }
 
-  var htmlSuffix = (this.htmlOption === 'pug' || this.htmlOption === 'pug') ? '.pug' : '.nunjucks';
+  var htmlSuffix = (this.htmlOption === 'pug' || this.htmlOption === 'jade') ? '.pug' : '.nunjucks';
   var jsSuffix = (this.jsPreprocessor === 'none') ? '.js' : '.es6.js';
   var cssSuffix = _getCssSuffix(this.cssOption, this.sassSyntax);
 
@@ -113,7 +113,7 @@ ModuleGenerator.prototype.files = function files() {
   this.template(('module.css'), (this.moduleFile + cssSuffix));
 
   function _getCssSuffix(cssOption, sassSyntax) {
-    var sassSuffix = (sassSyntax === 'sass') ? '.sass' : '.scss'
+    var sassSuffix = (sassSyntax === 'sass') ? '.sass' : '.scss';
 
     var _result = '.less';
     _result = (cssOption === 'sass') ? sassSuffix : _result;

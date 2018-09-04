@@ -2,7 +2,7 @@
 
 'use strict';
 
-import $ from 'jquery';
+import './styleguide';
 
-$(() => {
-});
+($ => {
+})(jQuery);

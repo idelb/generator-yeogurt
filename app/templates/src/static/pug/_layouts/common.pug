@@ -37,7 +37,7 @@ block content
 
 block append stylesheets
   if config.environment == "DEVELOPMENT"
-    link(href=baseUrl + "assets/styles/main-development.css")
+    link(rel="stylesheet" href=baseUrl + "assets/styles/main-development.css")
 
 block append lib-scripts
   script.

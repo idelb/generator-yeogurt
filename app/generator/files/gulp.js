@@ -34,6 +34,7 @@ var gulpFiles = function gulpFiles() {
   else {
     this.template('gulp/es6/browserify.js', 'gulp/browserify.js');
     this.template('gulp/es6/browserSync.js', 'gulp/browserSync.js');
+    this.template('gulp/es6/guide.js', 'gulp/guide.js');
     this.template('gulp/es6/clean.js', 'gulp/clean.js');
     this.template('gulp/es6/copy.js', 'gulp/copy.js');
     this.template('gulp/es6/eslint.js', 'gulp/eslint.js');

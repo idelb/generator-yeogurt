@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "dependencies": {
     "jquery": "~3.1.1",
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^4.1.3",
     "popper.js": "^1.14.3"
   },
   "devDependencies": {<% if (jsPreprocessor === 'es6') { %>
@@ -22,6 +22,11 @@
     "gulp-notify": "~3.0.0",
     "gulp-rename": "~1.2.2",
     "gulp-uglify": "~2.0.1",
+    "directory-tree": "^2.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file": "^0.4.0",
+    "gulp-wrapper": "^1.0.0",
+    "common-tags": "^1.8.0",
     "del": "~2.2.2",
     "gulp-if": "~2.0.2",
     "glob": "~7.1.1",
@@ -33,6 +38,7 @@
     "vinyl-buffer": "~1.0.0",
     "gulp-util": "~3.0.8",
     "gulp": "~3.9.1",
+    "browserify-shim": "^3.8.14",
     "browser-sync": "~2.18.0",<% if (htmlOption === 'pug') { %>
     "gulp-pug": "~3.3.0",
     "pug": "~2.0.3",<% } %><% if (htmlOption === 'nunjucks') { %>
@@ -73,6 +79,24 @@
   "engines": {
     "node": ">=0.12.0"
   },
+  "browser": {
+    "jquery": "./node_modules/jquery/dist/jquery.min.js",
+    "bootstrap": "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+  },
+  "browserify-shim": {
+    "jquery": "global:jQuery",
+    "three": "global:THREE",
+    "bootstrap": {
+      "depends": [
+        "jquery:jQuery"
+      ]
+    }
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
   "//": "CUSTOM CONFIGURATION",
   "config": {
     "//": "Local Server Settings",
@@ -101,6 +125,13 @@
       "css": "main**.{sass,scss}"<% } else if (cssOption === 'less') { %>,
       "css": "main**.less"<% } else if (cssOption === 'stylus') { %>,
       "css": "main**.styl"<% } %>
+    },
+    "guideComponents": {
+      "link": [{
+        "a": "a"
+      }, {
+        "a": "b"
+      }]
     }
   }
 }

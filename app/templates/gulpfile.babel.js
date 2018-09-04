@@ -54,19 +54,13 @@ gulp.task('build', [
   'less'<% } else if (cssOption === 'sass') { %>,
   'sass'<% } else if (cssOption === 'stylus') { %>,
   'stylus'<% } %>,
+  'guide',
   'browserify'
 ]);
 
 // Server tasks with watch
 gulp.task('serve', [
-  'imagemin',
-  'copy'<% if (htmlOption === 'pug') { %>,
-  'pug'<% } else if (htmlOption === 'nunjucks') {  %>,
-  'nunjucks'<% } %><% if (cssOption === 'less') { %>,
-  'less'<% } %><% if (cssOption === 'sass') { %>,
-  'sass'<% } %><% if (cssOption === 'stylus') { %>,
-  'stylus'<% } %>,
-  'browserify',
+  'build',
   'browserSync',
   'watch'
 ]);
