@@ -1047,20 +1047,21 @@ export default function (gulp, plugins, args, config, taskTarget, browserSync) {
     br
   `;
   gulp.task('guide', () => {
-
-    return plugins
-      .file('index.pug', template, {
-        src: true
-      })
-      .pipe(plugins.pug({
-        pug: pug,
-        pretty: true,
-        basedir: 'src',
-        locals: {
-          require: require,
-          config: config
-        }
-      }))
-      .pipe(gulp.dest(dest));
+    if (!args.production) {
+      return plugins
+        .file('index.pug', template, {
+          src: true
+        })
+        .pipe(plugins.pug({
+          pug: pug,
+          pretty: true,
+          basedir: 'src',
+          locals: {
+            require: require,
+            config: config
+          }
+        }))
+        .pipe(gulp.dest(dest));
+    }
   });
 }
