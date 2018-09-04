@@ -1,5 +1,8 @@
 extend ./base
 
+block append config
+  - var page= '';
+
 block content
     nav.navbar.navbar-expand-lg.navbar-dark.bg-primary
         a.navbar-brand(href='#') Multiplica
@@ -29,12 +32,16 @@ block content
                 input.form-control.mr-sm-2(type='text', placeholder='Search')
                 button.btn.btn-secondary.my-2.my-sm-0(type='submit') Search
     //- Provides layout level markup
-    .layout-wrapper.common
+    .layout-wrapper.common(id=page)
         block common
 
 block append stylesheets
   if config.environment == "DEVELOPMENT"
-    link(href=baseUrl + "assets/styles/main-development.css")
+    link(rel="stylesheet" href=baseUrl + "assets/styles/main-development.css")
+
+block append lib-scripts
+  script.
+    var baseUrl = '#{baseUrl}';
 
 block append scripts
   if config.environment == "DEVELOPMENT"

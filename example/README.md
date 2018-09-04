@@ -1,6 +1,6 @@
-# Example readme
+# Sample readme
 
-Generated on 2018-04-13 using
+Generated on 2018-09-04 using
 [generator-yeogurt@2.1.0](https://github.com/joneldiablo/generator-yeogurt)
 
 ## Description
@@ -13,10 +13,6 @@ Describe your site/app here.
 JavaScript
 - [Browserify](http://browserify.org/) with ES6/2015 support through [Babel](https://babeljs.io/)
 - [Node](https://nodejs.org/)
-
-Testing
-- [Karma](http://karma-runner.github.io/0.13/index.html)
-- [Jasmine](http://jasmine.github.io/)
 
 Styles
 - [Sass](http://sass-lang.com/) via ([node-sass](https://github.com/sass/node-sass))
@@ -53,7 +49,6 @@ The tasks are as follows:
 `gulp serve --open`: Same as `gulp serve` but will also open up site/app in your default browser
 `gulp serve --production`: Same as `gulp serve` but will run all production tasks so you can view the site/app in it's final optimized form
 
-`gulp test`: Lints all `*.js` file in the `source` folder using eslint and runs all `*.test.js` file unit tests through [Karma](http://karma-runner.github.io/0.13/index.html) and Jasmine
-`gulp test --watch`: Same as `gulp test` but will constantly watch `*.test.js` files and rerun tests when changes are detected
+`gulp test`: Lints all `*.js` file in the `source` folder using eslint
 
 ***Adding the `--debug` option to any gulp task displays extra debugging information (ex. data being loaded into your templates)***

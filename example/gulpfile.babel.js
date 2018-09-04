@@ -1,6 +1,5 @@
 'use strict';
 
-import path from 'path';
 import gulp from 'gulp';
 import gulpLoadPlugins from 'gulp-load-plugins';
 import browserSyncLib from 'browser-sync';
@@ -11,8 +10,6 @@ import glob from 'glob';
 // Load all gulp plugins based on their names
 // EX: gulp-copy -> copy
 const plugins = gulpLoadPlugins();
-// Create karma server
-const KarmaServer = require('karma').Server;
 
 const defaultNotification = function(err) {
   return {
@@ -51,25 +48,16 @@ gulp.task('build', [
   'imagemin',
   'pug',
   'sass',
+  'guide',
   'browserify'
 ]);
 
 // Server tasks with watch
 gulp.task('serve', [
-  'imagemin',
-  'copy',
-  'pug',
-  'sass',
-  'browserify',
+  'build',
   'browserSync',
   'watch'
 ]);
 
 // Testing
-gulp.task('test', ['eslint'], (done) => {
-  new KarmaServer({
-    configFile: path.join(__dirname, '/karma.conf.js'),
-    singleRun: !args.watch,
-    autoWatch: args.watch
-  }, done).start();
-});
+gulp.task('test', ['eslint']);

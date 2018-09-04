@@ -1,12 +1,12 @@
 {
   "generator-yeogurt": {
     "config": {
-      "projectName": "example",
+      "projectName": "Sample",
       "htmlOption": "pug",
       "jsPreprocessor": "es6",
       "cssOption": "sass",
       "sassSyntax": "scss",
-      "testFramework": "jasmine"
+      "testFramework": "none"
     },
     "version": "2.1.0"
   }
